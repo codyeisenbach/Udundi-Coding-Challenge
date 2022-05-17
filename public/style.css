@@ -263,6 +263,11 @@ animation-direction: alternate;
   margin-left: 10px;
 }
 
+.m-close {
+  margin-left: 94%;
+  margin-top: -12px;
+}
+
 .explore {
   margin-top: 30%;
   align-self: flex-start;
@@ -282,7 +287,9 @@ animation-direction: alternate;
 visibility: hidden;
 }
 
-
+.card {
+max-width: 330px;
+}
 
 @keyframes createBox {
   0% {
@@ -293,8 +300,8 @@ visibility: hidden;
   }
   50% {
     border-radius: 50% / 0%;
-    width: 300px;
-    height: 600px;
+    width: 100px;
+    height: 300px;
     margin-top: -300px;
 
   }
@@ -326,9 +333,13 @@ margin-top: 75px;
   margin-top: -26px;
   margin-left: 45px;
 }
-
+.s-bar {
+padding-top: 200px;
+}
 .card {
-  margin-bottom: -100px;
+margin-top: 200px;
+
+
 }
 
 @keyframes createBox {
