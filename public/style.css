@@ -124,17 +124,23 @@ height: 50px;
   }
 }
 
-.btn-div {
-  width: 300px;
-  margin-left: 30px;
-  margin-top: 190px;
-}
+
 
 .pls-btn {
   position: relative;
   width: 30px;
   height: 30px;
+  margin-left: 30px;
+  margin-top: 190px;
+}
 
+.more {
+  position: relative;
+  margin-left: 20px;
+  margin-top: 195px;
+  font-family: "Helvetica";
+  font-size: 16px;
+  color: white;
 }
 
 .pls-btn, .pls-btn:before {
@@ -158,6 +164,7 @@ height: 50px;
   border-radius: 50% / 15%;
   height: 30px;
   width: 30px;
+  margin-left: 20px;
   background-color: white;
 }
 
@@ -215,13 +222,13 @@ animation-direction: alternate;
     transform-origin: center;
     border-radius: 50% / 15%;
     transform: scale(.3);
-    margin-top: -20px;
+    margin-top: 200px;
   }
   50% {
     border-radius: 50% / 0%;
     width: 400px;
     height: 500px;
-    margin-top: -400px;
+    margin-top: -100px;
 
   }
   75% {
@@ -233,19 +240,64 @@ animation-direction: alternate;
     transform-origin: center;
     border-radius: 50% / 15%;
     transform: scale(0);
-    margin-top: -15px;
+    margin-top: 200px;
   }
 }
 
-
+@media (max-width: 768px) {
+.explore{
+  font-size: 50px;
+  margin-left: -30px;
+}
 
 .more {
-  position: fixed;
-  margin-top: -25px;
-  margin-left: 50px;
-  font-family: "Helvetica";
   font-size: 16px;
-  color: white;
+  margin-left: 14px;
+  margin-bottom: 50px;
+  margin-top: 88px;
+}
+.pls-btn {
+  margin-left: -10px;
+  margin-bottom: 50px;
+  margin-top: 85px;
+}
+.s-bar {
+padding-top: 20%;
+padding-bottom: 100px;
+
+}
+.card {
+margin-top: 200px;
+}
+
+@keyframes createBox {
+  0% {
+    transform-origin: center;
+    border-radius: 50% / 15%;
+    transform: scale(.3);
+    margin-left: -10px;
+    margin-top: 90px;
+  }
+  50% {
+    border-radius: 50% / 0%;
+    width: 400px;
+    height: 500px;
+    margin-top: -60px;
+    margin-left: -10px;
+  }
+  75% {
+    border-radius: 50% / 20%;
+    transform: scale(1);
+
+  }
+  100% {
+    transform-origin: center;
+    border-radius: 50% / 15%;
+    transform: scale(0);
+    margin-left: -10px;
+    margin-top: 82px;
+  }
+ }
 }
 
 @media (max-width: 400px) {
@@ -256,11 +308,12 @@ animation-direction: alternate;
   }
 
 .pls-btn {
-  align-self: flex-start;
+  position: relative;
   width: 40px;
   height: 40px;
-  margin-top: 110px;
-  margin-left: 10px;
+  margin-top: 210px;
+  margin-left: 20px;
+
 }
 
 .m-close {
@@ -270,17 +323,14 @@ animation-direction: alternate;
 
 .explore {
   margin-top: 30%;
+  margin-left: 1px;
   align-self: flex-start;
-  font-size: 110px; 
+  font-size: 70px; 
 }
 
 .s-bar {
-  display: flex;
-  height: 100%;
-  padding-top: 60%;
-  background-color: #611212;
+width: 150px;
   padding-left: 60px;
-  width: 140px;
 }
 
 .more {
@@ -288,22 +338,29 @@ visibility: hidden;
 }
 
 .card {
+  position: fixed;
 max-width: 330px;
 }
+.btn-div {
+  height: 700px;
+  width: 300px;
+  margin-left: 0px;
+  margin-top: 0px;
+}
 
 @keyframes createBox {
   0% {
     transform-origin: center;
     border-radius: 50% / 15%;
     transform: scale(.3);
-    margin-top: -100px;
+    margin-top: 210px;
   }
   50% {
     border-radius: 50% / 0%;
-    width: 100px;
-    height: 300px;
-    margin-top: -300px;
-
+    width: 330px;
+    height: 530px;
+    margin-top: -60px;
+    margin-left: -30px;
   }
   75% {
     border-radius: 50% / 20%;
@@ -314,59 +371,8 @@ max-width: 330px;
     transform-origin: center;
     border-radius: 50% / 15%;
     transform: scale(0);
-    margin-top: -40px;
+    margin-bottom: -62px;
+
   }
  }
-}
-
-@media (max-width: 768px) {
-.explore{
-  font-size: 50px;
-  margin-left: -30px;
-}
-.btn-div {
-  margin-left: -30px;
-margin-top: 75px;
-}
-.more {
-  font-size: 16px;
-  margin-top: -26px;
-  margin-left: 45px;
-}
-.s-bar {
-padding-top: 200px;
-}
-.card {
-margin-top: 200px;
-
-
-}
-
-@keyframes createBox {
-  0% {
-    transform-origin: center;
-    border-radius: 50% / 15%;
-    transform: scale(.3);
-    margin-top: -100px;
-  }
-  50% {
-    border-radius: 50% / 0%;
-    width: 500px;
-    height: 450px;
-    margin-top: -300px;
-
-  }
-  75% {
-    border-radius: 50% / 20%;
-    transform: scale(1);
-
-  }
-  100% {
-    transform-origin: center;
-    border-radius: 50% / 15%;
-    transform: scale(0);
-    margin-top: -40px;
-  }
-}
-
 }
