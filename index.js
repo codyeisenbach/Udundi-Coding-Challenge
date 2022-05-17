@@ -21,12 +21,14 @@ $(function () {
     $(".card-text").addClass("fadeIn");
     $(".card-btn").addClass("fadeIn");
     $(".u-div").addClass("fadeIn");
+    $(".more").addClass("hidden");
     $(".m-close").addClass("fadeIn");
     $(".card").addClass("transform-active");
     $("#pls-btn").addClass("hidden");
 
     //close events
     $(".m-close").on("click", function () {
+      $(".more").removeClass("hidden");
       $(".card-title").removeClass("fadeIn");
       $(".card-text").removeClass("fadeIn");
       $(".card-btn").removeClass("fadeIn");
