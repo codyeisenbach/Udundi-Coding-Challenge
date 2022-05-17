@@ -257,18 +257,24 @@ animation-direction: alternate;
 
 .pls-btn {
   align-self: flex-start;
-  margin-left: 10px;
   width: 40px;
   height: 40px;
-  margin-top: 50px;
+  margin-top: 110px;
+  margin-left: 10px;
+}
+
+.explore {
+  margin-top: 30%;
+  align-self: flex-start;
+  font-size: 110px; 
 }
 
 .s-bar {
   display: flex;
   height: 100%;
-  padding-top: 30%;
+  padding-top: 60%;
   background-color: #611212;
-  padding-left: 15px;
+  padding-left: 60px;
   width: 140px;
 }
 
@@ -276,11 +282,7 @@ animation-direction: alternate;
 visibility: hidden;
 }
 
-.explore {
-  margin-top: 30%;
-  align-self: flex-start;
-  font-size: 90px; 
-}
+
 
 @keyframes createBox {
   0% {
@@ -323,6 +325,37 @@ margin-top: 75px;
   font-size: 16px;
   margin-top: -26px;
   margin-left: 45px;
+}
+
+.card {
+  margin-bottom: -100px;
+}
+
+@keyframes createBox {
+  0% {
+    transform-origin: center;
+    border-radius: 50% / 15%;
+    transform: scale(.3);
+    margin-top: -100px;
+  }
+  50% {
+    border-radius: 50% / 0%;
+    width: 500px;
+    height: 450px;
+    margin-top: -300px;
+
+  }
+  75% {
+    border-radius: 50% / 20%;
+    transform: scale(1);
+
+  }
+  100% {
+    transform-origin: center;
+    border-radius: 50% / 15%;
+    transform: scale(0);
+    margin-top: -40px;
+  }
 }
 
 }
