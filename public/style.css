@@ -316,10 +316,10 @@ max-width: 330px;
     transform: scale(0);
     margin-top: -40px;
   }
-}
+ }
 }
 
-@media (max-width: 760px) {
+@media (max-width: 768px) {
 .explore{
   font-size: 50px;
   margin-left: -30px;
