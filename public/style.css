@@ -1,0 +1,328 @@
+html {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  display: flex;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  justify-content: flex-end;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-image: url("Coding-Challenge-Image.png");
+  background-size: cover;
+  background-position: right;
+  background-color: #611212f8;
+}
+
+.content {
+  display: flex;
+  position: absolute;
+  justify-content: flex-end;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+}
+
+.s-bar {
+  display: flex;
+  height: 100%;
+  width: 300px;
+  left: 0;
+  top: 0;
+  padding-top: 25%;
+  background-color: #611212;
+  padding-left: 83px;
+  padding-bottom: 100px;
+  }
+
+.explore {
+position: fixed;
+  font-size: 150px;
+  font-family: "Georgia-Bold";
+  color: white;
+
+  animation-fill-mode: both;
+}
+
+.m-close {
+  color: maroon;
+  cursor: pointer;
+  font-size: 25px;
+  margin-left: 93%;
+}
+
+.social-icons {
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-self: flex-end;
+  height: 115px;
+  margin-right: 10px;
+  margin-bottom: 20px;
+}
+
+.f-book {
+  position: relative;
+
+width: 50px;
+height: 50px;
+
+}
+
+.insta {
+  position: relative;
+
+  width: 50px;
+  height: 50px;
+
+}
+
+
+
+
+
+@keyframes fadeOut {
+  0% {
+     opacity: 1;
+     transform: translateX(0px);
+     transition: all 0.3s ease;
+  }
+  100% {
+     opacity: 0;
+     transform: translateX(40px);
+     transition: all 0.3s ease;
+  }
+}
+
+.fadeOut {
+  animation-name: fadeOut;
+}
+
+.fadeIn {
+  animation-name: fadeIn;
+  animation-duration: 1s;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity:0;
+    transform: translateX(-40px);
+  }
+
+  50% {
+    opacity:0;
+    transform: translateX(-20px);
+  }
+  100% {
+    opacity:1;
+    transform: translateX(0);
+
+  }
+}
+
+.btn-div {
+  width: 300px;
+  margin-left: 30px;
+  margin-top: 190px;
+}
+
+.pls-btn {
+  position: relative;
+  width: 30px;
+  height: 30px;
+
+}
+
+.pls-btn, .pls-btn:before {
+  transition: all 0.3s linear;
+  border-radius: 50% / 15%;
+}
+
+.pls-btn:active, .pls-btn:after {
+  transform: scale(0.5);
+  border-radius: 50% / 15%;
+  transition: all 0.3s ease;
+}
+
+.hidden {
+  visibility: hidden;
+}
+
+.card {
+  position: fixed;
+  transform-origin: center;
+  border-radius: 50% / 15%;
+  height: 30px;
+  width: 30px;
+  background-color: white;
+}
+
+.card-body {
+  position: inherit;
+}
+
+.card-title {
+  font-family: "Georgia-Bold";
+  font-size: 45px;
+  color:#611212f8 ;
+
+  animation-fill-mode: both;
+}
+
+.u-div {
+  height: 2px;
+  width: 250px;
+  background-image: linear-gradient(to right, #611212, #ffffff); 
+  margin-bottom: 20px;
+}
+
+.card-text {
+  font-size: 12px;
+  line-height: 2;
+
+  animation-fill-mode: both;
+}
+
+.card-btn {
+  height: 45px;
+  width: 170px;
+  padding-top: 10px;
+  text-align: center;
+  color: white;
+  background-image: linear-gradient(to right, #611212, #8d6654); 
+  border-radius: 0;
+  outline: 0;
+
+  animation-fill-mode: both;
+}
+
+.transform-active {
+animation: createBox .8s ease;
+animation-fill-mode: forwards;
+animation-direction: alternate;
+}
+
+.paused {
+    animation-play-state: paused;
+}
+
+@keyframes createBox {
+  0% {
+    transform-origin: center;
+    border-radius: 50% / 15%;
+    transform: scale(.3);
+    margin-top: -20px;
+  }
+  50% {
+    border-radius: 50% / 0%;
+    width: 400px;
+    height: 500px;
+    margin-top: -400px;
+
+  }
+  75% {
+    border-radius: 50% / 20%;
+    transform: scale(1);
+
+  }
+  100% {
+    transform-origin: center;
+    border-radius: 50% / 15%;
+    transform: scale(0);
+    margin-top: -15px;
+  }
+}
+
+
+
+.more {
+  position: fixed;
+  margin-top: -25px;
+  margin-left: 50px;
+  font-family: "Helvetica";
+  font-size: 16px;
+  color: white;
+}
+
+@media (max-width: 400px) {
+
+  body {
+    align-content: center;
+    flex-direction: column;
+  }
+
+.pls-btn {
+  align-self: flex-start;
+  margin-left: 10px;
+  width: 40px;
+  height: 40px;
+  margin-top: 50px;
+}
+
+.s-bar {
+  display: flex;
+  height: 100%;
+  padding-top: 30%;
+  background-color: #611212;
+  padding-left: 15px;
+  width: 140px;
+}
+
+.more {
+visibility: hidden;
+}
+
+.explore {
+  margin-top: 30%;
+  align-self: flex-start;
+  font-size: 90px; 
+}
+
+@keyframes createBox {
+  0% {
+    transform-origin: center;
+    border-radius: 50% / 15%;
+    transform: scale(.3);
+    margin-top: -100px;
+  }
+  50% {
+    border-radius: 50% / 0%;
+    width: 300px;
+    height: 600px;
+    margin-top: -300px;
+
+  }
+  75% {
+    border-radius: 50% / 20%;
+    transform: scale(1);
+
+  }
+  100% {
+    transform-origin: center;
+    border-radius: 50% / 15%;
+    transform: scale(0);
+    margin-top: -40px;
+  }
+}
+}
+
+@media (max-width: 760px) {
+.explore{
+  font-size: 50px;
+  margin-left: -30px;
+}
+.btn-div {
+  margin-left: -30px;
+margin-top: 75px;
+}
+.more {
+  font-size: 16px;
+  margin-top: -26px;
+  margin-left: 45px;
+}
+
+}
